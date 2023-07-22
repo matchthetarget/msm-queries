@@ -2,14 +2,18 @@
   Director #<%= @director.id %> details
 </h1>
 
-<a href="/directors" class="btn btn-block btn-outline-secondary">
-  Go back
-</a>
+<div>
+  <a href="/directors" class="btn btn-block btn-outline-secondary">
+    Go back
+  </a>
+</div>
 
-<a href="/delete_director/<%= @director.id %>" class="btn btn-block btn-outline-secondary">
-  Delete director
-  <small>(Building this link is not required. It's an optional stretch goal; but, you have the tools if you want to give it a try.)</small>
-</a>
+<div>
+  <a href="/delete_director/<%= @director.id %>" class="btn btn-block btn-outline-secondary">
+    Delete director
+    <small>(Building this link is not required. It's an optional stretch goal; but, you have the tools if you want to give it a try.)</small>
+  </a>
+</div>
 
 <hr>
 
@@ -88,32 +92,32 @@
   </tr>
 
   <% @filmography.each do |movie| %>
-  <tr>
-    <td>
-      <%= movie.id %>
-    </td>
+    <tr>
+      <td>
+        <%= movie.id %>
+      </td>
 
-    <td>
-      <img src="<%= movie.image %>" style="width:250px;">
-    </td>
+      <td>
+        <img src="<%= movie.image %>" style="width:250px;">
+      </td>
 
-    <td>
-      <%= movie.title %>
-    </td>
+      <td>
+        <%= movie.title %>
+      </td>
 
-    <td>
-      <%= movie.year %>
-    </td>
+      <td>
+        <%= movie.year %>
+      </td>
 
-    <td>
-      <%= Director.where({ :id => movie.director_id }).at(0).name %>
-    </td>
+      <td>
+        <%= Director.where({ :id => movie.director_id }).at(0).name %>
+      </td>
 
-    <td>
-      <a href="/movies/<%= movie.id %>">
-        Show details
-      </a>
-    </td>
-  </tr>
+      <td>
+        <a href="/movies/<%= movie.id %>">
+          Show details
+        </a>
+      </td>
+    </tr>
   <% end %>
 </table>

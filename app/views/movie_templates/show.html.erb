@@ -2,14 +2,18 @@
   Movie #<%= @movie.id %> details
 </h1>
 
-<a href="/movies" class="btn btn-block btn-outline-secondary">
-  Go back
-</a>
+<div>
+  <a href="/movies" class="btn btn-block btn-outline-secondary">
+    Go back
+  </a>
+</div>
 
-<a href="/delete_movie/<%= @movie.id %>" class="btn btn-block btn-outline-secondary">
-  Delete movie
-  <small>(Building this link is not required. It's an optional stretch goal; but, you have the tools if you want to give it a try.)</small>
-</a>
+<div>
+  <a href="/delete_movie/<%= @movie.id %>" class="btn btn-block btn-outline-secondary">
+    Delete movie
+    <small>(Building this link is not required. It's an optional stretch goal; but, you have the tools if you want to give it a try.)</small>
+  </a>
+</div>
 
 <hr>
 
