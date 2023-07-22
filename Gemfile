@@ -108,9 +108,6 @@ group :test do
   gem "webmock"
 end
 
-# cron job for sample_data with whenever
-gem "whenever", require: false
-
 # for scraping imdb
 gem 'themoviedb-api'
 gem 'mechanize'
