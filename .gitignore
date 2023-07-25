@@ -34,3 +34,7 @@ core.chrome*
 examples.txt
 .vscode/.ltici_apitoken.yml
 .env
+
+# Un-ignore SQLite3 db
+!/db/*.sqlite3
+!/db/*.sqlite3-journal
