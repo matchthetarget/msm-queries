@@ -2,7 +2,7 @@
 #
 # Table name: actors
 #
-#  id         :bigint           not null, primary key
+#  id         :integer          not null, primary key
 #  bio        :text
 #  dob        :date
 #  image      :string

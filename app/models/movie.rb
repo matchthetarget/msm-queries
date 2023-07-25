@@ -2,7 +2,7 @@
 #
 # Table name: movies
 #
-#  id          :bigint           not null, primary key
+#  id          :integer          not null, primary key
 #  description :text
 #  duration    :integer
 #  image       :string
